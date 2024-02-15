@@ -1,0 +1,33 @@
+.container {
+  width: 80%;
+}
+.header {
+  padding-top: 3%;
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_input input {
+    width: 400px;
+    height: 40px;
+    max-width: 400px;
+    max-height: 40px;
+    min-width: 100px;
+    min-height: 20px;
+    border-radius: 20px;
+  }
+  &_phone {
+    display: none;
+  }
+}
+
+@media (max-width: 688px) {
+  .header {
+    &_phone {
+      display: block;
+    }
+    &_input {
+      display: none;
+    }
+  }
+}
